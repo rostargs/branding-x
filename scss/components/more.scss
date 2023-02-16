@@ -1,0 +1,76 @@
+.section-more {
+}
+.more {
+    padding: 240px 0px;
+    border-bottom: 1px solid #DAD9D6;
+    @media(max-width:$breakpoint_tablet){
+      padding: 110px 0px;
+    }
+		// .more__header
+
+		&__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media(max-width:$breakpoint_tablet){
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  gap: 30px;
+            }
+		}
+
+		// .more__title
+
+		&__title {
+            max-width: 476px;
+            @media(max-width:$breakpoint_tablet){
+                  text-align: center;
+            }
+		}
+
+		// .more__button
+
+		&__button {
+            width: 295px;
+		}
+
+		// .more__main
+
+		&__main {
+            padding-top: 75px;
+            overflow-x: auto;
+            position: relative;
+
+            &::-webkit-scrollbar{
+                  width: 0px;
+                  height: 0px;
+              }
+		}
+
+		// .more__main-image
+
+		&__main-image {
+            position: relative;
+            min-width: 1220px;
+
+            &::before{
+                width: 418px;
+                content: 'Pellentesque sit amet porttitor eget dolor morbi non turpis egestas maecenas pharetra convallis posuere netus et malesuada fames ac fames ac turpis egestas sed tempus urna sit amet facilisis magna etiam tempor orci non tellus orci ac auctor augue.';
+                position: absolute;
+                font-size: 18px;
+                line-height: 30px;
+                color: #555671;
+            }
+            &::after{
+                width: 418px;
+                content: 'Pellentesque sit amet porttitor eget dolor morbi non turpis egestas maecenas pharetra convallis posuere netus et malesuada fames ac fames ac turpis egestas sed tempus urna sit amet facilisis magna etiam tempor orci non tellus orci ac auctor augue.';
+                position: absolute;
+                font-size: 18px;
+                line-height: 30px;
+                color: #555671;
+                bottom: 0;
+                right: 0;
+            }
+		}
+}
+

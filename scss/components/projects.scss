@@ -1,0 +1,119 @@
+.section-project {
+}
+.project {
+    padding: 240px 0px;
+
+    @media(max-width:$breakpoint_tablet){
+      padding: 110px 0px;
+    }
+
+		// .project__header
+
+		&__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media(max-width:$breakpoint_tablet){
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  gap: 30px;
+            }
+		}
+
+		// .project__title
+
+		&__title {
+            max-width: 456px;
+            @media(max-width:$breakpoint_tablet){
+                  text-align: center;
+            }
+		}
+
+		// .project__button
+
+		&__button {
+            width: 272px;
+            height: 90px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 22px;
+		}
+
+		// .project__list
+
+		&__list {
+            padding-top: 80px;
+		}
+
+		// .project__item
+
+		&__item {
+            display: flex;
+            // align-items: center;
+            min-height:calc(254px - 76px);
+            border-bottom: 1px solid #DAD9D6 ;
+            padding: 60px 0;
+
+            @media(max-width:$breakpoint_laptop){
+                  flex-direction: column;
+            }
+		}
+
+		// .project__item-name
+
+		&__item-name {
+            padding-top: 10px;
+            width: 215px;
+            display: flex;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.72px;
+            text-transform: uppercase;
+            color: var(--text-color);
+		}
+
+		// .project__information
+
+		&__information {
+            padding-left: 110px;
+            @media(max-width:$breakpoint_laptop){
+                  padding-left: 0;
+            }
+		}
+
+		// .project__information-title
+
+		&__information-title {
+            font-size: 38px;
+            line-height: 50px;
+            color: var(--text-color);
+
+            @media(max-width:$breakpoint_tablet){
+                  font-size: 26px;
+                  line-height: 34px;
+            }
+		}
+
+		// .project__information-description
+
+		&__information-description {
+            max-width: 612px;
+
+            @media(max-width:$breakpoint_tablet){
+                  font-size: 16px;
+                  line-height: 25px;
+            }
+		}
+}
+.span-slash {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    color: #D9D8D5;
+}
+.date{
+    padding-left: 10px;
+}
+

@@ -1,0 +1,16 @@
+:root{
+    --bg-color:#FFF;
+    --text-color:#181A3F;
+    --orange:#FF7549;
+}
+
+// vars
+
+$container:1250px;
+
+// breakpoints
+$breakpoint_descktop:1200px;
+$breakpoint_laptop:1024px;
+$breakpoint_tablet:768px;
+$breakpoint_phone:480px;
+$breakpoint_sm:324px;
